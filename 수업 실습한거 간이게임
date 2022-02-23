@@ -1,0 +1,27 @@
+- 👋 Hi, I’m @leepureun
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+leepureun/leepureun is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+
+using namespace std;
+int main()
+{
+	srand(time(0));
+	int RanNum = 1 + rand() % 100; //랜덤한 숫자 생성1-100까지 bool값을쓰라고??
+	int Num = 0;
+	for (int i = 1; i <= 10; ++i) //10번의 기회가 잇음
+	{
+		cin >> Num; //숫자를 입력받는다
+		if (Num > RanNum) { cout << "크다" << endl; }
+		else if (Num < RanNum) { cout << "작다" << endl; }
+		else if (Num == RanNum) {cout << "성공" << endl; break; }
+		if (i > 10) {cout << "실패" << endl;break;}
+	}
+	
+}
